@@ -1,0 +1,22 @@
+ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+
+li {
+
+    padding: 20 40;
+    color: black;
+    background-color: #7c8a2e;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition-duration: 333ms;
+}
+
+li:hover {
+  padding: 15px 20px;
+  background: #a6b457;
+  transform: translateY(-5px);
+}
