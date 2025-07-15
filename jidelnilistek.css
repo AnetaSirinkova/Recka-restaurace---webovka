@@ -1,28 +1,56 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 30px;
-    background-color: #f9f9f9;
-    color: #333;
-}
-h1 {
-    text-align: center;
-}
-.menu-section {
-     margin-bottom: 40px;
-}
-h2 {
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 5px;
-    color: #444;
-}
-.menu-item {
-     display: flex;
-     justify-content: space-between;
-     margin: 10px 0;
-}
-.item-name {
-    font-weight: bold;
-}
-.item-price {
-    font-style: italic;
-}
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 0.2em;
+    }
+    hr {
+      border: 0;
+      border-top: 2px solid #ddd;
+      margin: 0.5em 0 1.5em;
+    }
+    .section {
+      margin-bottom: 2em;
+    }
+    .section h2 {
+      font-size: 1.5em;
+      margin: 0.8em 0 0.2em;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.4em 0;
+      border-bottom: 1px dashed #eee;
+    }
+    .item:last-child {
+      border-bottom: none;
+    }
+    .name {
+      flex: 1;
+      /* vytvoření vodící tečky */
+      position: relative;
+      margin-right: 10px;
+    }
+    .name::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-bottom: 1px dotted #ccc;
+      z-index: -1;
+    }
+    .price {
+      flex: none;
+      margin-left: 10px;
+      white-space: nowrap;
+      font-weight: bold;
+    }
