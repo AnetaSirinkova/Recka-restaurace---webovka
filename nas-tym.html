@@ -1,67 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="webovka.css">
-    <title>Náš tým</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Employee List</title>
+  <style>
+    body {
+      background-color: #fdff8c;
+      font-family: Arial, sans-serif;
+      color: #2d0035;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #7c8a2e;
+      padding: 20px;
+      text-align: center;
+      color: #fdff8c;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .employee-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .employee {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .employee img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border: none;
+    }
+
+    .employee-info {
+      background-color: #7c8a2e;
+      padding: 15px;
+      flex: 1;
+      color: #ffffff;
+    }
+
+    .employee-info h3 {
+      margin: 0 0 5px 0;
+    }
+
+    .employee-info p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>O nás</li>
-            <li>Menu
-                <ul>
-                    <li>Jídelní lístek</li>
-                    <li>Nápojový lístek</li>
-                </ul>
-            </li>
-            <li><a href="nas-tym.html">Náš tým</a></li>
-        </ul>
-    <nav>
-        <ul class="nas_tym">
-        <li class="zamestnanec">
-            <img src="./obrazky/zdenek_pohreich.jpg" alt="Zdeněk Pohlreich">
-            <h3>Zdeněk Pohlreich</h3>
-            <p>Šéfkuchař</p>
-            <p>Email: zdenek.pohreich@example.com</p>
-            <p>Telefon: +420 123 456 789</p>
-        </li>
-        <li class="zamestnanec">
-            <img src="./obrazky/Halina_Pawlovska.jpeg" alt="Halina Pawlovská">
-            <h3>Halina Pawlovská</h3>
-            <p>Číšnice</p>
-            <p>Email: halina.pawlovska@example.com</p>
-            <p>Telefon: +420 987 654 321</p>
-        </li>
-      <li class="zamestnanec"> 
-            <img src="/obrazky/jaromir_soukup.webp" alt="Jaromír Soukup">
-            <h3>Jaromír Soukup</h3>
-            <p>Markeťák</p>
-            <p>Email: jaromír.soukup@example.com</p>
-            <p>Telefon: +420 897 564 231 </p>
+
+  <header>
+    <h1>Náš tým</h1>
+  </header>
+
+  <div class="container">
+    <ul class="employee-list">
+      <li class="employee">
+        <img src="/obrazky/Halina_Pawlovska.jpeg" alt="halina_pawlovska" />
+        <div class="employee-info">
+          <h3>Halina Pawlowská</h3>
+          <p>Číšnice</p>
+        </div>
       </li>
-    <li class="zamestnanec">
-        <img src="/obrazky/jirik_babica.jpg" alt="Jiří Babica">
-        <h3> Jiří Babica</h3>
-        <p>Šéfkuchař</p>
-        <p>Email: jirka.babica@example.com</p>
-        <p>Telefon: +420 234 678 901</p>
-    </li>
-    <li class="zamestnanec"> 
-            <img src="/obrazky/Radek_Kasparek.jpg" alt="Radek Kašpárek">
-            <h3>Radek Kašpárek</h3>
-            <p>Umývač nádobí</p>
-            <p>Email: radek.kasparek@example.com</p>
-            <p>Telefon: +420 897 564 231 </p>
+      <li class="employee">
+        <img src="/obrazky/dagmar_patrasova.jpg" alt="dagmar_patrasova" />
+        <div class="employee-info">
+          <h3>Dagmar Patrasová</h3>
+          <p>Pomocná číšnice</p>
+        </div>
       </li>
-      <li> class="zamestnanec"
-        <img src="/obrazky/jan_puncochar.jpg" alt="Jan Punčochář">
-        <h3>Jan Punčochář</h3>
-        <p>Odborník na zeleninu</p>
-        <p>Email: jan.puncochar@example.com</p>
-        <p>Telefon: +420 789 325 168</p>
+      <li class="employee">
+        <img src="/obrazky/jirik_babica.jpg" alt="jiri_babica" />
+        <div class="employee-info">
+          <h3>Jiří Babica</h3>
+          <p>Šéfkuchař</p>
+        </div>
+      </li>
+      <li class="employee">
+        <img src="/obrazky/zdenek_pohreich.jpg" alt="zdenek_pohreich" />
+        <div class="employee-info">
+          <h3>Zdeněk Pohlreich</h3>
+          <p>Zástupce šéfkuchaře</p>
+        </div>
+      </li>
+      <li class="employee">
+        <img src="/obrazky/jaroslav_sapik.jpg" alt="jaroslav_sapik" />
+        <div class="employee-info">
+          <h3>Jaroslav Sapík</h3>
+          <p>Kuchař</p>
+        </div>
+      </li>
+      <li class="employee">
+        <img src="/obrazky/jaromir_soukup.webp" alt="jaromir_soukup" />
+        <div class="employee-info">
+          <h3>Jaromír Soukup</h3>
+          <p>Markeťák</p>
+        </div>
+      </li>
+      <li class="employee">
+        <img src="/obrazky/jolanda.png" alt="jolanda" />
+        <div class="employee-info">
+          <h3>Jolanda (Věra Nemethová)</h3>
+          <p>Barista</p>
+        </div>
+      </li>
+      <li class="employee">
+        <img src="/obrazky/jan_puncochar.jpg" alt="jan_puncochar" />
+        <div class="employee-info">
+          <h3>Jan Punčochář</h3>
+          <p>Odborník na zeleninu</p>
+        </div>
+      </li>
+      <li class="employee">
+        <img src="/obrazky/Radek_Kasparek.jpg" alt="radek_kasparek" />
+        <div class="employee-info">
+          <h3>Radek Kasparek</h3>
+          <p>Uklízeč</p>
+        </div>
+      </li>
+      <li class="employee">
+        <img src="/obrazky/roman_paulus.webp" alt="roman_paulus" />
+        <div class="employee-info">
+          <h3>Roman Paulus</h3>
+          <p>Barman</p>
+        </div>
       </li>
     </ul>
+  </div>
+
 </body>
 </html>
