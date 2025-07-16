@@ -54,7 +54,7 @@ body {
   nav.categories button.active {
     color: white;
     background-color:#76a925;
-    box-shadow: 0 4px 10px #32490c(0,123,255,0.3);
+    box-shadow: 0 4px 10px rgba(73, 117, 13, 0.333);
   }
 
   section.dish-category {
@@ -83,7 +83,7 @@ body {
   }
 
   .dish:hover {
-    box-shadow: 0 6px 15px #4e7116(0,123,255,0.25);
+    box-shadow: 0 6px 15px rgba(73, 117, 13, 0.333);
   }
 
   .dish-info {
