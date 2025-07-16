@@ -12,32 +12,6 @@ body {
     flex-wrap: wrap;
 }
 
-nav.categories {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 40px;
-}
-
-nav.categories button {
-  background: #d8df60; /* světle zelená barva pozadí */
-  border: none;
-  font-size: 18px;
-  font-weight: 600;
-  color: #3a4308;
-  cursor: pointer;
-  padding: 10px 22px;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(101, 113, 24, 0);
-}
-
-nav.categories button:hover,
-nav.categories button.active {
-  color: white;
-  background-color: #647118;
-  box-shadow: 0 4px 15px rgba(73, 117, 13, 0.7);
-}
 
 .image-section img {
   max-width: 50%;
