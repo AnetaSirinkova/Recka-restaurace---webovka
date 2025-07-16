@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f9f9f9;
+    background:#d9db6b;
     color: #333;
   }
 
@@ -18,7 +18,7 @@ body {
     text-align: center;
     margin: 0;
     font-weight: 700;
-    color: #007BFF;
+    color: #7c8a2e;
     font-size: 28px;
     letter-spacing: 1px;
   }
@@ -62,9 +62,9 @@ body {
   }
 
   section.dish-category h2 {
-    color: #007BFF;
+    color: #7c8a2e;
     font-weight: 700;
-    border-bottom: 3px solid #007BFF;
+    border-bottom: 3px solid #7c8a2e;
     padding-bottom: 8px;
     margin-bottom: 30px;
     font-size: 24px;
@@ -104,7 +104,7 @@ body {
 
   .dish-price {
     font-weight: 700;
-    color: #007BFF;
+    color:#7c8a2e;
     font-size: 18px;
   }
 
@@ -121,3 +121,5 @@ body {
       margin-top: 12px;
     }
   }
+
+  /* #281522 - černá, #7c8a2e - zelená, #d9db6b - žlutá*/
