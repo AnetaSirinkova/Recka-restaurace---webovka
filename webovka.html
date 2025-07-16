@@ -1,18 +1,128 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="webovka.css">
-    <title>Ambrosie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Restaurant Locations</title>
 
+    <!-- 🖌️ Styles: Page Design Colors -->
+    <style>
+        body {
+            background-color: #fdff8c; /* Straw */
+            color: #281522; /* Very Dark Purple */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #7c8a2e; /* Olive */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #a0a04f; /* Lighter Olive for contrast */
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .location {
+            border-bottom: 1px solid #7c8a2e;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        /* When hovering, the location section will scale up */
+        .location:hover {
+            transform: scale(1.05); /* Increase size by 5% */
+            background-color: #f5f86d;
+            }
+
+        .location img {
+            max-width: 300px;
+            height: auto;
+            margin-right: 20px;
+            border: 2px solid #7c8a2e;
+        }
+
+        .location-info {
+            max-width: 600px;
+        }
+
+        footer {
+            background-color: #7c8a2e;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 
 <body>
+
+    <!-- 🏠 Page Header -->
+    <header>
+        <h1>Lokace restaurací Ambrosie</h1>
+        <p>Řekni nám svou okaci a my příjdeme!</p>
+    </header>
+
+    <!-- 🔗 Navigation Links (Optional) -->
     <nav>
-        <ul>
-            <li>Menu</li>
-            <li>Zaměstnanci</li>
-        </ul>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Locations</a>
+        <a href="#">Contact</a>
     </nav>
+
+    <!-- 📍 Location Section #1 -->
+    <section class="location">
+        <!-- 🖼️ Restaurant Image -->
+        <img src="https://foto.turistika.cz/foto/10974/22053/full_e50747_f_normalFile1-bezruc-001.jpg" alt="Restaurant in New York">
+        
+        <!-- 📄 Text Info -->
+        <div class="location-info">
+            <h2>Ostrava</h2>
+            <p>Užívejte si nádherné výhledy na pracující dělníky v uhelných dolech z pohodlí naší restaurace.</p>
+            <p><strong>Address:</strong> Dělnické armády, 363, Ostrava</p>
+        </div>
+    </section>
+
+    <!-- 📍 Location Section #2 -->
+    <section class="location">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.Dzx_Rm15LcM7vfnG2HMUYQHaEg?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Restaurant in Chicago">
+        <div class="location-info">
+            <h2>Brno</h2>
+            <p>Vychutnávejte si vytříbené pokrmy které chutnají ještě lépe vzhledem k okolí tak typickém pro podřadnou vesnici.</p>
+            <p><strong>Address:</strong> Vesnického orloje, 40 centimetrů, Brno</p>
+        </div>
+    </section>
+
+    <!-- 📍 Location Section #3 -->
+    <section class="location">
+        <img src="https://i.dailymail.co.uk/1s/2022/03/16/13/55421993-10619259-Aftermath_of_shelling_of_a_residential_building_by_the_Russian_t-a-122_1647438145850.jpg" alt="Restaurant in Chánov">
+        <div class="location-info">
+            <h2>Most - Hlavní lokace</h2>
+            <p>Užijte si skládce podobnou kajinu v jedinečném sídlišti Chánov, dávejte si však pozor! V chánově mají vždycky hlad!</p>
+            <p><strong>Address:</strong> U neoficiální skládky, 980, Most</p>
+        </div>
+    </section>
+
+    <!-- 🧾 Footer -->
+    <footer>
+        <p>&copy; 2025 Our Restaurant Chain. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
