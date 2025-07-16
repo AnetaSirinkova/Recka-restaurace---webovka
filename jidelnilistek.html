@@ -7,51 +7,103 @@
     <link rel="stylesheet" href="jidelnilistek.css">
 </head>
 
-<h1>Řecký jídelní lístek</h1>
+<body>
+<h1> Jídelní lístek</h1>
+
+<!--kategorie-->
 <nav class="categories">
   <button class="active" data-cat="predkrmy">Předkrmy</button>
   <button data-cat="hlavni-jidla">Hlavní jídla</button>
+  <button data-cat="hlavni-jidla">Mořské plody</button>
   <button data-cat="dezerty">Dezerty</button>
-  <button data-cat="napoje">Nápoje</button>
 </nav>
 
+<!--Předkrmy-->
 <main>
   <section class="dish-category" id="predkrmy">
     <h2>Předkrmy</h2>
     <div class="dish">
       <div class="dish-info">
-        <div class="dish-name">Řecký salát</div>
-        <div class="dish-description">Čerstvá rajčata, okurka, feta, olivy</div>
+        <div class="dish-name">Tzatziki</div>
+        <div class="dish-description">Jogurtový dip s okurkou, česnekem a koprem, podávaný s pita chlebem.</div>
       </div>
-      <div class="dish-price">120 Kč</div>
+      <div class="dish-price">89 Kč</div>
     </div>
     <div class="dish">
       <div class="dish-info">
-        <div class="dish-name">Tzatziki</div>
-        <div class="dish-description">Jogurtový dip s okurkou a česnekem</div>
+        <div class="dish-name">Saganaki</div>
+        <div class="dish-description">Smažený sýr, podávaný horký s citronem.</div>
       </div>
-      <div class="dish-price">80 Kč</div>
+      <div class="dish-price">129 Kč</div>
+    </div>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Dolmades</div>
+        <div class="dish-description">Vinné listy plněné rýží a bylinkami, podávané s jogurtovým dipem.</div>
+      </div>
+      <div class="dish-price">119 Kč</div>
     </div>
   </section>
 
+  <!--Hlavní jídla-->
   <section class="dish-category" id="hlavni-jidla">
     <h2>Hlavní jídla</h2>
     <div class="dish">
       <div class="dish-info">
-        <div class="dish-name">Gyros talíř</div>
-        <div class="dish-description">Marinované maso s hranolkami a salátem</div>
+        <div class="dish-name">Souvlaki</div>
+        <div class="dish-description">Grilované kousky masa (vepřové nebo kuřecí) podávané s pita chlebem a tzatziki.</div>
       </div>
-      <div class="dish-price">190 Kč</div>
+      <div class="dish-price">199 Kč</div>
     </div>
     <div class="dish">
       <div class="dish-info">
-        <div class="dish-name">Souvlaki</div>
-        <div class="dish-description">Špízy z vepřového masa s pita chlebem</div>
+        <div class="dish-name">Moussaka</div>
+        <div class="dish-description">Zapečený pokrm z mletého masa, lilku a bešamelu.</div>
       </div>
-      <div class="dish-price">200 Kč</div>
+      <div class="dish-price">>219 Kč</div>
+    </div>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Pastitsio</div>
+        <div class="dish-description">Zapečené makaróny s mletým masem a bešamelovou omáčkou.</div>
+      </div>
+      <div class="dish-price">209 Kč</div>
+    </div>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Gemista</div>
+        <div class="dish-description">Plněná rajčata a papriky rýží a bylinkami.</div>
+      </div>
+      <div class="dish-price">189 Kč</div>
+    </div>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Papoutsakia</div>
+        <div class="dish-description">Lilky plněné mletým masem a bešamelem, zapečené do zlatova.</div>
+      </div>
+      <div class="dish-price">199 Kč</div>
     </div>
   </section>
 
+  <!--Mořské plody-->
+  <section class="dish-category" id="morske-plody">
+    <h2>Mořské plody</h2>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Kalamáry</div>
+        <div class="dish-description">Smažené kroužky kalamárů podávané s citronem.</div>
+      </div>
+      <div class="dish-price">169 Kč</div>
+    </div>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Chobotnice na grilu</div>
+        <div class="dish-description">Grilovaná chobotnice podávaná s olivovým olejem a citronem.</div>
+      </div>
+      <div class="dish-price">>219 Kč</div>
+    </div>
+
+  <!--Dezerty-->
   <section class="dish-category" id="dezerty">
     <h2>Dezerty</h2>
     <div class="dish">
@@ -61,23 +113,12 @@
       </div>
       <div class="dish-price">90 Kč</div>
     </div>
-  </section>
-
-  <section class="dish-category" id="napoje">
-    <h2>Nápoje</h2>
     <div class="dish">
       <div class="dish-info">
-        <div class="dish-name">Řecké víno</div>
-        <div class="dish-description">Sklenka bílého nebo červeného vína</div>
+        <div class="dish-name">Loukoumades</div>
+        <div class="dish-description">Řecké kobližky máčené v medu a posypané skořicí.</div>
       </div>
-      <div class="dish-price">70 Kč</div>
-    </div>
-    <div class="dish">
-      <div class="dish-info">
-        <div class="dish-name">Frappe</div>
-        <div class="dish-description">Ledová káva s pěnou</div>
-      </div>
-      <div class="dish-price">60 Kč</div>
+      <div class="dish-price">>99 Kč</div>
     </div>
   </section>
 </main>
