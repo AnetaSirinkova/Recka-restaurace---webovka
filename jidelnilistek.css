@@ -1,80 +1,98 @@
-  body {
+body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #f9f9f9;
     color: #333;
   }
 
-  .container {
-    display: flex;
-    min-height: 100vh;
-  }
-
-  /* Levý sloupec - kategorie */
-  .sidebar {
-    width: 220px;
-    background-color: #fff;
-    border-right: 1px solid #ddd;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  .sidebar h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
+  header {
+    text-align: center;
+    background: white;
+    padding: 20px 0;
     border-bottom: 2px solid #007BFF;
-    padding-bottom: 5px;
-    color: #007BFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
   }
 
-  .category-list {
-    list-style: none;
-    padding: 0;
+  header h1 {
     margin: 0;
-  }
-
-  .category-list li {
-    margin-bottom: 12px;
-    cursor: pointer;
-    color: #555;
-    transition: color 0.3s;
-  }
-
-  .category-list li:hover,
-  .category-list li.active {
+    font-weight: 700;
     color: #007BFF;
-    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 1px;
   }
 
-  /* Hlavní obsah - jídelní lístek */
-  .main-content {
-    flex-grow: 1;
-    padding: 30px 40px;
-    background: #fff;
+  main {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
   }
 
-  .dish-category {
+  /* Kategorie jako horizontální menu nahoře pod hlavičkou */
+  nav.categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     margin-bottom: 40px;
   }
 
-  .dish-category h3 {
-    font-size: 22px;
+  nav.categories button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+  }
+
+  nav.categories button:hover,
+  nav.categories button.active {
+    color: white;
+    background-color: #007BFF;
+    box-shadow: 0 4px 10px rgba(0,123,255,0.3);
+  }
+
+  section.dish-category {
+    margin-bottom: 50px;
+  }
+
+  section.dish-category h2 {
     color: #007BFF;
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
+    font-weight: 700;
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+    font-size: 24px;
   }
 
   .dish {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .dish:hover {
+    box-shadow: 0 6px 15px rgba(0,123,255,0.25);
+  }
+
+  .dish-info {
+    max-width: 75%;
   }
 
   .dish-name {
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 6px;
   }
 
   .dish-description {
@@ -86,18 +104,19 @@
   .dish-price {
     font-weight: 700;
     color: #007BFF;
+    font-size: 18px;
   }
 
-  @media (max-width: 768px) {
-    .container {
+  @media (max-width: 600px) {
+    nav.categories {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .dish {
       flex-direction: column;
+      align-items: flex-start;
     }
-    .sidebar {
-      width: 100%;
-      border-right: none;
-      border-bottom: 1px solid #ddd;
-    }
-    .main-content {
-      padding: 20px;
+    .dish-price {
+      margin-top: 12px;
     }
   }
