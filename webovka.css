@@ -83,6 +83,23 @@ h1 {
     font-size: 1rem;
     margin-top: 5px;
     color: #555;
+    gap: 10px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+li {
+    flex: 1 0 30%;
+    padding: 20px 40px;
+    color: black;
+    background-color: #7c8a2e;
+}
+
+ul {
+display: flex;
+    gap: 10px;
+    list-style: none;
+    flex-wrap: wrap;
 }
 
 /* Reviews box */
@@ -133,23 +150,41 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #3b2c3c;
+
+.zamestnanec img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
-/* Ensure responsive behavior */
-@media (max-width: 768px) {
-    body {
-        flex-direction: column;
-        align-items: center;
-    }
+.zamestnanec img {
+  width: 300px;
+  height: 300px ;
+  object-fit: cover;
+}
+.zamestnanec img {
+  width: 300px;
+  height: 300px ;
+  object-fit: cover;
+}
+.zamestnanec img {
+  width: 300px;
+  height: 300px ;
+  object-fit: cover;
+}
+.zamestnanec img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
 
-    .opening-hours, #reviews {
-        width: 100%;
-        margin-top: 20px;
-    }
+.nas_tym {
+  width: 100%;
+  overflow: hidden;
+}
 
-    .section-content {
-        margin: 20px 0;
-    }
+li:hover {
+  padding: 15px 20px;
+  background: #a6b457;
+  transform: translateY(-5px);
 }
