@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background:#d9db6b;
+    background:#eef07f;
     color: #333;
   }
 
@@ -9,7 +9,7 @@ body {
     text-align: center;
     background: white;
     padding: 20px 0;
-    border-bottom: 2px solid #007BFF;
+    border-bottom: 2px solid #76a925;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-bottom: 30px;
   }
@@ -18,7 +18,7 @@ body {
     text-align: center;
     margin: 0;
     font-weight: 700;
-    color: #7c8a2e;
+    color: #8c9c31;
     font-size: 28px;
     letter-spacing: 1px;
   }
@@ -53,8 +53,8 @@ body {
   nav.categories button:hover,
   nav.categories button.active {
     color: white;
-    background-color: #007BFF;
-    box-shadow: 0 4px 10px rgba(0,123,255,0.3);
+    background-color:#76a925;
+    box-shadow: 0 4px 10px #4e7116(0,123,255,0.3);
   }
 
   section.dish-category {
@@ -62,9 +62,9 @@ body {
   }
 
   section.dish-category h2 {
-    color: #7c8a2e;
+    color: #8c9c31;
     font-weight: 700;
-    border-bottom: 3px solid #7c8a2e;
+    border-bottom: 3px solid #8c9c31;
     padding-bottom: 8px;
     margin-bottom: 30px;
     font-size: 24px;
@@ -83,7 +83,7 @@ body {
   }
 
   .dish:hover {
-    box-shadow: 0 6px 15px rgba(0,123,255,0.25);
+    box-shadow: 0 6px 15px #4e7116(0,123,255,0.25);
   }
 
   .dish-info {
@@ -104,7 +104,7 @@ body {
 
   .dish-price {
     font-weight: 700;
-    color:#7c8a2e;
+    color:#8c9c31;
     font-size: 18px;
   }
 
