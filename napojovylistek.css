@@ -1,7 +1,7 @@
   body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9f9f9;
+      background: #eef07f;
       color: #333;
     }
 
@@ -9,7 +9,7 @@
       text-align: center;
       background: white;
       padding: 20px 0;
-      border-bottom: 2px solid #007BFF;
+      border-bottom: 2px solid  #647118;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       margin-bottom: 30px;
     }
@@ -17,11 +17,11 @@
     header h1 {
       margin: 0;
       font-weight: 700;
-      color: #007BFF;
+      color:  #647118;
       font-size: 28px;
       letter-spacing: 1px;
     }
-
+    /* Kategorie jako horizontální menu nahoře pod hlavičkou */
     nav.categories {
       display: flex;
       justify-content: center;
@@ -40,13 +40,14 @@
       padding: 8px 16px;
       border-radius: 30px;
       transition: all 0.3s ease;
+      box-shadow: 0 4px 10px #32490c(0,0,0,0);
     }
 
     nav.categories button:hover,
     nav.categories button.active {
       color: white;
-      background-color: #007BFF;
-      box-shadow: 0 4px 10px rgba(0,123,255,0.3);
+      background-color: #647118;
+      box-shadow: 0 4px 10px rgba(73, 117, 13, 0.333);
     }
 
     main {
@@ -60,9 +61,9 @@
     }
 
     section.drink-category h2 {
-      color: #007BFF;
+      color: #647118;
       font-weight: 700;
-      border-bottom: 3px solid #007BFF;
+      border-bottom: 3px solid #647118;
       padding-bottom: 8px;
       margin-bottom: 30px;
       font-size: 24px;
@@ -70,7 +71,7 @@
 
     .drink {
       background: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px #32490c(0,0,0,0.1);
       border-radius: 12px;
       padding: 20px 25px;
       margin-bottom: 20px;
@@ -81,7 +82,7 @@
     }
 
     .drink:hover {
-      box-shadow: 0 6px 15px rgba(0,123,255,0.25);
+      box-shadow: 0 6px 15px rgba(73, 117, 13, 0.333);
     }
 
     .drink-info {
@@ -102,7 +103,7 @@
 
     .drink-price {
       font-weight: 700;
-      color: #007BFF;
+      color: #647118;
       font-size: 18px;
     }
 
