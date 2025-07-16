@@ -84,6 +84,35 @@
             border-radius: 8px;
         }
 
+        nav.categories {
+            padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+nav.categories button {
+  background: #d8df60; /* světle zelená barva pozadí */
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3a4308;
+  cursor: pointer;
+  padding: 10px 22px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(101, 113, 24, 0);
+}
+
+nav.categories button:hover,
+nav.categories button.active {
+  color: white;
+  background-color: #647118;
+  box-shadow: 0 4px 15px rgba(73, 117, 13, 0.7);
+}
+
+
  table {
             width: 80%;
             margin: 20px auto;
@@ -127,6 +156,15 @@
         <h1>Vítejte na stránkách restaurace Ambrosie!!</h1>
         <p>"protože v Chánově mají vždycky hlad"</p>
     </header>
+<nav class="categories">
+  <button class="active" data-cat="predkrmy">Předkrmy</button>
+<a href="jidelnilistek.html">
+  <button data-cat="hlavni-jidla">Hlavní jídla</button>
+</a>
+
+  <button data-cat="hlavni-jidla">Mořské plody</button>
+  <button data-cat="dezerty">Dezerty</button>
+</nav>
 
     <!-- Main Content Section -->
     <div class="content">
