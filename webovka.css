@@ -1,0 +1,21 @@
+ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+li {
+  padding: 15px 20px;
+  background: #529812;
+  color: #fff;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: background, transform;
+  transition-duration: 333ms;
+}
+
+li:hover {
+  padding: 15px 20px;
+  background: #3a6b0d;
+  transform: translateY(-5px);
+}
