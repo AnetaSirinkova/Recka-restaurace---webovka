@@ -52,7 +52,7 @@ body {
       padding: 15px 0;
       color: #647118;
       font-weight: 600;
-      max-width: 900px;
+      max-width: auto;
       margin: 0 auto;
       margin-top: 40px;
     }
