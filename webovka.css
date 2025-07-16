@@ -137,12 +137,6 @@ button:hover {
     background-color: #3b2c3c;
 }
 
-footer div {
-  display: flex;
-  align-items: center;
-}
-
-
 /* Ensure responsive behavior */
 @media (max-width: 768px) {
     body {
