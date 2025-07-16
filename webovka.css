@@ -1,22 +1,155 @@
-ul {
+/* Base styling */
+body {
+    background-color: #d9db6b;
+    color: #281522;
+    font-family: 'Helvetica', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
     display: flex;
-    gap: 10px;
-    list-style: none;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
+.image-section img {
+  max-width: 50%;
+}
 
-li {
+h1 {
+    color: #281522;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-    padding: 20 40;
-    color: black;
-    background-color: #7c8a2e;
-    font-family: sans-serif;
+/* Section for adding images and text */
+.section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.section-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.section-content .text {
+    font-size: 1.2rem;
+    color: #281522;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* Opening hours container */
+.opening-hours {
+    border: 2px solid #281522;
+    padding: 20px;
+    width: 300px;
+    list-style-type: none;
+    background-color: #fffef2;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.opening-hours:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* List items */
+.opening-hours li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    color: #281522;
+}
+
+.opening-hours li strong {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.opening-hours li p {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #555;
+}
+
+/* Reviews box */
+#reviews {
+    border: 2px solid #281522;
+    padding: 20px;
+    width: 350px;
+    background-color: #fffef2;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    position: sticky;
+    top: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#reviews:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Reviews blockquote */
+#reviews blockquote {
+    margin: 15px 0;
+    padding-left: 15px;
+    font-style: italic;
+    border-left: 3px solid #281522;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Heading styles */
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #281522;
+}
+
+/* Optional: Buttons, if needed for future */
+button {
+    background-color: #281522;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
-    transition-duration: 333ms;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
-li:hover {
-  padding: 15px 20px;
-  background: #a6b457;
-  transform: translateY(-5px);
+button:hover {
+    background-color: #3b2c3c;
+}
+
+/* Ensure responsive behavior */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .opening-hours, #reviews {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .section-content {
+        margin: 20px 0;
+    }
 }
