@@ -65,6 +65,7 @@
             padding: 20px;
             text-align: center;
         }
+    
         
         /* Main content section styling */
         .content {
@@ -78,36 +79,46 @@
         }
 
         img {
-            max-width: 100%;
+            max-width: 50%;
             height: auto;
             border-radius: 8px;
         }
 
-        /* Footer styling */
-        footer {
-            background-color: #7c8a2e; /* Same olive green */
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+ table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 8px;
         }
 
-        .image-section img {
-            max-width: 50%;
+        th, td {
+            padding: 12px 20px;
+            text-align: center;
+            border: 1px solid #ddd;
         }
-        
-        /* Responsive design */
+
+        th {
+            background-color: #7c8a2e; /* Olive green */
+            color: white;
+        }
+
+        td {
+            background-color: #fdff8c;
+        }
+
+        /* Make the table responsive for smaller screens */
         @media screen and (max-width: 600px) {
-            header, footer {
-                padding: 15px;
+            table {
+                width: 100%;
             }
-            .content {
+            th, td {
+                font-size: 14px;
                 padding: 10px;
             }
         }
     </style>
+
 </head>
 <body>
 
@@ -136,8 +147,50 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Ambrosie. All rights reserved.</p>
-    </footer>
+    
 
+        
+    <table>
+        <thead>
+            <tr>
+                <th>Den</th>
+                <th>Otevírací doba</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pondělí</td>
+                <td>Zavřeno, otevřeno pouze pro lidi s trvalým bydlištěm v Chánově.</td>
+            </tr>
+            <tr>
+                <td>Úterý</td>
+                <td>12:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Středa</td>
+                <td>12:00 - 21:00</td>
+            </tr>
+            <tr>
+                <td>Čtvrtek</td>
+                <td>12:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Pátek</td>
+                <td>11:00 - 22:00</td>
+            </tr>
+            <tr>
+                <td>Sobota</td>
+                <td>14:00 - 23:00</td>
+            </tr>
+            <tr>
+                <td>Neděle</td>
+                <td>11:00 - 18:00</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    </footer>
+        <h3>&copy; 2025 Ambrosie. All rights reserved.</h3>
 </body>
 </html>
