@@ -13,13 +13,41 @@
       padding: 0;
     }
 
+     nav.categories {
+            padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+nav.categories button {
+  background: #d8df60; /* světle zelená barva pozadí */
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3a4308;
+  cursor: pointer;
+  padding: 10px 22px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(101, 113, 24, 0);
+}
+
+nav.categories button:hover,
+nav.categories button.active {
+  color: white;
+  background-color: #647118;
+  box-shadow: 0 4px 15px rgba(73, 117, 13, 0.7);
+}
+
     header {
       background-color: #7c8a2e;
       padding: 20px;
       text-align: center;
       color: #fdff8c;
     }
-    
+
     .container {
       padding: 20px;
     }
@@ -74,9 +102,33 @@
 
   <header>
     <h1>Náš tým </h1>
-  </header>
+      <h1>Vítejte na stránkách restaurace Ambrosie!!</h1>
+        <p>"protože v Chánově mají vždycky hlad"</p>
+
   
   <div class="container">
+
+      
+
+    <nav class="categories">
+
+    <a href="index.html">
+  <button data-cat="hlavni-stranka">Hlavní stránka</button>
+  </a>
+<a href="jidelnilistek.html">
+  <button data-cat="hlavni-jidla">Jídelní lístek</button>
+</a>
+<a href="napojovylistek.html">
+  <button data-cat="hlavni-napoje">Nápojový lístek</button>
+  </a>
+      <a href="nas-tym.html">
+  <button data-cat="nas-tym">Náš tým</button>
+    </a>
+        <a href="lokace.html">
+  <button data-cat="nas-tym">Lokace</button>
+    </a>
+</nav>
+</header>
     <ul class="employee-list">
       <!--POHLREICH-->
       <li class="employee">
