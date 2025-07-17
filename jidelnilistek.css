@@ -59,7 +59,7 @@ nav.categories button {
   border: none;
   font-size: 18px;
   font-weight: 600;
-  color: #3a4308;
+  color: #212605;
   cursor: pointer;
   padding: 10px 22px;
   border-radius: 30px;
@@ -72,7 +72,7 @@ nav.categories button {
   border: none;
   font-size: 18px;
   font-weight: 600;
-  color: #3a4308;
+  color: #212605;
   cursor: pointer;
   padding: 10px 22px;
   border-radius: 30px;
@@ -84,7 +84,7 @@ nav.categories button:hover,
 nav.categories button.active {
   color: white;
   background-color: #647118;
-  box-shadow: 0 4px 15px rgba(73, 117, 13, 0.7);
+  box-shadow: 0 4px 15px rgba(55, 87, 10, 0.7);
 }
 
 
