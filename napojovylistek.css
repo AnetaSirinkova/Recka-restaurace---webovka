@@ -3,7 +3,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* jemný lineární gradient pro pozadí s tóny žluté a světle zelené */
   background: linear-gradient(135deg, #eef07f 0%, #d8df60 50%, #b7c240 100%);
-  color: #333;
+  color: #000000;
   /* lehká textura přes průhledný vzor (volitelné) */
   background-image:
     radial-gradient(circle at 10% 20%, rgba(255 255 255 / 0.1), transparent 25%),
@@ -12,12 +12,15 @@ body {
   background-size: cover;
 }
 
+header p{
+  color:white;
+}
 header {
   text-align: center;
-  background: white;
+  background: #647118;
   padding: 20px 0;
-  border-bottom: 2px solid #647118;
-  box-shadow: 0 3px 8px rgba(100, 113, 24, 0.3); /* trochu výraznější stín */
+  border-bottom: 2px solid #ffffff;
+  box-shadow: 0 3px 8px rgb(255, 255, 255); /* trochu výraznější stín */
   margin-bottom: 30px;
   position: sticky; /* header zůstane nahoře při scrollu */
   top: 0;
@@ -28,7 +31,7 @@ header h1 {
   justify-content: center;
   margin: 0;
   font-weight: 700;
-  color: #647118;
+  color: #ffffff;
   font-size: 28px;
   letter-spacing: 1px;
   /* malý textový stín pro lepší čitelnost */
