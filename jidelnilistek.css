@@ -92,7 +92,7 @@ nav.categories button:hover,
 nav.categories button.active {
   color: white;
   background-color: #647118;
-  box-shadow: 0 4px 15px rgba(73, 117, 13, 0.7);
+  box-shadow: 0 4px 15px rgba(31, 49, 5, 0.7);
 }
 
 section.dish-category {
